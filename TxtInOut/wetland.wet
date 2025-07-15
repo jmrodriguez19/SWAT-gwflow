@@ -1,0 +1,26 @@
+wetland.wet: written by SWAT+ editor v2.1.4 on 2022-11-22 14:57 for SWAT+ rev.60.5.4
+      id  name                          init               hyd               rel               sed               nut  
+       1  wet0058                   initwet1        hydwet0058           wetland           sedwet1           nutwet1  
+       2  wet0059                   initwet1        hydwet0059           wetland           sedwet1           nutwet1  
+       3  wet0323                   initwet1        hydwet0323           wetland           sedwet1           nutwet1  
+       4  wet0324                   initwet1        hydwet0324           wetland           sedwet1           nutwet1  
+       5  wet0845                   initwet1        hydwet0845           wetland           sedwet1           nutwet1  
+       6  wet0846                   initwet1        hydwet0846           wetland           sedwet1           nutwet1  
+       7  wet2300                   initwet1        hydwet2300           wetland           sedwet1           nutwet1  
+       8  wet2301                   initwet1        hydwet2301           wetland           sedwet1           nutwet1  
+       9  wet2302                   initwet1        hydwet2302           wetland           sedwet1           nutwet1  
+      10  wet2303                   initwet1        hydwet2303           wetland           sedwet1           nutwet1  
+      11  wet2304                   initwet1        hydwet2304           wetland           sedwet1           nutwet1  
+      12  wet2350                   initwet1        hydwet2350           wetland           sedwet1           nutwet1  
+      13  wet2351                   initwet1        hydwet2351           wetland           sedwet1           nutwet1  
+      14  wet2352                   initwet1        hydwet2352           wetland           sedwet1           nutwet1  
+      15  wet2353                   initwet1        hydwet2353           wetland           sedwet1           nutwet1  
+      16  wet2354                   initwet1        hydwet2354           wetland           sedwet1           nutwet1  
+      17  wet3199                   initwet1        hydwet3199           wetland           sedwet1           nutwet1  
+      18  wet3200                   initwet1        hydwet3200           wetland           sedwet1           nutwet1  
+      19  wet4424                   initwet1        hydwet4424           wetland           sedwet1           nutwet1  
+      20  wet4425                   initwet1        hydwet4425           wetland           sedwet1           nutwet1  
+      21  wet4426                   initwet1        hydwet4426           wetland           sedwet1           nutwet1  
+      22  wet4427                   initwet1        hydwet4427           wetland           sedwet1           nutwet1  
+      23  wet4428                   initwet1        hydwet4428           wetland           sedwet1           nutwet1  
+      24  wet4927                   initwet1        hydwet4927           wetland           sedwet1           nutwet1  

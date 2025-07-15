@@ -1,0 +1,9 @@
+ files_out.out - OUTPUT FILES WRITTEN
+ CHK                       checker.out
+ BASIN                     basin_wb_day.txt
+ BASIN                     basin_wb_aa.txt
+ SWAT-DEG_CHANNEL          channel_sd_day.txt
+ DTBL                      lu_change_out.txt
+ BASIN_CROP_YLD            basin_crop_yld_yr.txt
+ BASIN_CROP_YLD            basin_crop_yld_aa.txt
+ HRU_ORGC                  hru_orgc.txt

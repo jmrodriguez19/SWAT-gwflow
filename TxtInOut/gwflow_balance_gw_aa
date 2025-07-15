@@ -1,0 +1,29 @@
+ Average annual groundwater watershed-wide fluxes
+ 
+ watershed area (m2):  7.2682819E+09
+ 
+ Positive value: groundwater added to aquifer
+ Negative value: groundwater removed from aquifer
+ 
+ dvol:      mm   change in groundwater volume during the year
+ rech:      mm   soil water added to groundwater
+ gwet:      mm   groundwater removed by evapotranspiration
+ gwsw:      mm   groundwater discharge to streams
+ swgw:      mm   stream water seepage to groundwater
+ satx:      mm   saturation excess flow (water table above ground)
+ soil:      mm   groundwater transferred to HRU soil profile
+ latl:      mm   groundwater transferred between cells
+ bndr:      mm   groundwater added/removed at watershed boundary
+ ppag:      mm   groundwater pumped for irrigation
+ ppex:      mm   groundwater pumping specified by user
+ tile:      mm   groundwater removed via tile drains
+ resv:      mm   groundwater exchanged with reservoirs
+ wetl:      mm   groundwater outflow to wetlands
+ canl:      mm   canal seepage to groundwater
+ fpln:      mm   floodplain exchange
+ pond:      mm   recharge pond seepage
+ phyt:      mm   phreatophyte transpiration
+ ppdf:      mm   groundwater demand not satisfied for irrigation
+ 
+  year  dvol         rech         gwet         gwsw         swgw         satx         soil         latl         bndr         ppag         ppex         tile         resv         wetl         canl         fpln         pond         phyt         ppdf         
+    2014  -0.8699E+01   0.4767E+02  -0.2134E+00  -0.8635E-01   0.3588E+01  -0.5303E+02   0.0000E+00  -0.1990E-06   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.1106E+01   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00   0.0000E+00
