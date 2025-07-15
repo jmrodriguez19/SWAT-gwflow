@@ -29,7 +29,7 @@ This project implements an **iterative calibration and sensitivity analysis work
      - `par_zonal_tag_input` → GWFlow input parameters
   5. **Save**:
      - CSV files: `R1_cal.csv`, `R1_input.csv`
-     - Serialized RDS lists: `TxtInOut/R1_cal.rds`, `TxtInOut/R1_input.rds`
+     - Serialized RDS lists: generate a list of `n_sample` with  the parameter configuration adapted to the SWAT+ (`calibration.cal`) and gwflow (`gwflow.input`)            files `TxtInOut/R1_cal.rds`, `TxtInOut/R1_input.rds`
   6. **Visualize** histograms of each sampled parameter to inspect distribution.
 
 ### 2. `2_Run_iter_proc.R`
