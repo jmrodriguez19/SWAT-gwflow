@@ -83,3 +83,8 @@ SWAT_gwflow_cal/
     "readr", "stringr", "future", "future.apply", 
     "dplyr", "data.table"
   ))
+  
+## 📝 License
+
+This project is released under the **MIT License**.  
+See the full text in the [LICENSE](LICENSE) file for details.
