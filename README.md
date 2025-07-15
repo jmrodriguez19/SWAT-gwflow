@@ -4,6 +4,19 @@ This project implements an **iterative calibration and sensitivity analysis work
 
 ## 🛠️ Scripts Overview
 
+### 🔧 `HRUS_gridcell_fix.R` (Optional Utility)
+
+- **Purpose**: Adjust HRU-cell area mapping **only when** the shapefile used for HRU-gridcell intersection contains **gaps** (i.e., does not fully cover the modeled area).
+- **Use case**: Required *only* if a simplified HRU shapefile was used during the intersection step and some grid cells are not completely filled by HRUs.
+- **Key functionalities**:
+  1. **Reads shapefile and HRU configuration files**.
+  2. **Handles comma-separated HRUs** (multiple HRUs per cell).
+  3. **Disaggregates and corrects area distribution** for shared HRUs.
+  4. **Weights areas proportionally** to ensure each grid cell's assigned HRU area matches the original SWAT+ configuration.
+  5. **Verifies final per-cell area match** to the original model input.
+
+- 📌 This script ensures numerical consistency in HRU area assignments before running the model or aggregating results. It is not needed in cases where the HRU shapefile fully covers the grid domain.
+
 ### 1. `1_Parametrization.R`
 
 - **Purpose**: Generate multiple combinations of model parameters within predefined bounds.
@@ -54,24 +67,6 @@ This project implements an **iterative calibration and sensitivity analysis work
                          (wb$latq_cha + wb$surq_cha - gw_flux$gwsw - gw_flux$satx)
        ```
      - Extract calibration & input CSVs subsets and generate **dotty plots** of each parameter against `GW_contribution`.
-
-## 📂 Project Structure
-SWAT_gwflow_cal/
-├── 1_Parametrization.R # Sampling + matrix creation
-├── 2_Run_iter_proc.R # Parallel runs + processing
-├── R1_cal.csv # Calibration parameter samples
-├── R1_input.csv # GWFlow parameter samples
-├── TxtInOut/
-│ ├── calibration.cal # SWAT+ template file
-│ ├── gwflow.input # GWFlow template file
-│ ├── gwflow.rescells # GWFlow template file
-│ ├── R1_cal.rds # List of modified calibration files
-│ ├── R1_input.rds # List of modified input files
-├── 1.rds # Results from batch 1
-├── 2.rds # Results from batch 2
-├── README.md # Project description
-├── .gitignore
-└── LICENSE
 
 ## ⚙️ Requirements
 
