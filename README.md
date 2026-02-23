@@ -1,4 +1,4 @@
-# SWAT+gwflow Calibration using Latin Hypercube Sampling
+# SWAT+gwflow calibration using Latin Hypercube Sampling
 
 This project implements an **iterative calibration and sensitivity analysis workflow** for the **SWAT+gwflow model**, using **Latin Hypercube Sampling (LHS)** for parameter generation. The approach enables evaluation of groundwater contributions and calibration of both surface and subsurface hydrologic parameters in coupled simulations.
 
