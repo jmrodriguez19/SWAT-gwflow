@@ -1,6 +1,6 @@
-# SWAT+GWFlow Calibration using Latin Hypercube Sampling
+# SWAT+gwflow Calibration using Latin Hypercube Sampling
 
-This project implements an **iterative calibration and sensitivity analysis workflow** for the **SWAT+GWFlow model**, using **Latin Hypercube Sampling (LHS)** for parameter generation. The approach enables evaluation of groundwater contributions and calibration of both surface and subsurface hydrologic parameters in coupled simulations.
+This project implements an **iterative calibration and sensitivity analysis workflow** for the **SWAT+gwflow model**, using **Latin Hypercube Sampling (LHS)** for parameter generation. The approach enables evaluation of groundwater contributions and calibration of both surface and subsurface hydrologic parameters in coupled simulations.
 
 ## 🛠️ Scripts Overview
 
@@ -22,11 +22,11 @@ This project implements an **iterative calibration and sensitivity analysis work
 - **Purpose**: Generate multiple combinations of model parameters within predefined bounds.
 - **Steps**:
   1. **Load libraries** (`tibble`, `tidyr`, `purrr`, `lhs`, `ggplot2`, `readr`, `stringr`).
-  2. **Define parameter bounds** for SWAT+ (soil, routing, percolation, etc.) and GWFlow (aquifer properties, recharge, reservoir).
+  2. **Define parameter bounds** for SWAT+ (soil, routing, percolation, etc.) and gwflow (aquifer properties, recharge, reservoir).
   3. **Perform Latin Hypercube Sampling** (`lhs::randomLHS`) with `n_sample = 20` and `k = n_par` parameters.
   4. **Map unit-interval samples to actual ranges**, creating two tibbles:
      - `par_zonal_tag_cal` → calibration parameters
-     - `par_zonal_tag_input` → GWFlow input parameters
+     - `par_zonal_tag_input` → gwflow input parameters
   5. **Save**:
      - CSV files: `R1_cal.csv`, `R1_input.csv`
      - Serialized RDS lists: generate a list of `n_sample` with  the parameter configuration adapted to the SWAT+ (`calibration.cal`) and gwflow (`gwflow.input`)            files
@@ -35,7 +35,7 @@ This project implements an **iterative calibration and sensitivity analysis work
 
 ### 2. `2_Run_iter_proc.R`
 
-- **Purpose**: Iterate SWAT+GWFlow runs in parallel, process results, and compute a groundwater contribution metric.
+- **Purpose**: Iterate SWAT+gwflow runs in parallel, process results, and compute a groundwater contribution metric.
 - **Steps**:
   1. **Load libraries** (`future.apply`, `future`, `readr`, `tidyr`, `dplyr`, `data.table`).
   2. **Configure parallel backend** (`future::plan(multisession, workers = 20)`).
